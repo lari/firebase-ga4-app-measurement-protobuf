@@ -6,6 +6,8 @@ This is a community-created Proto definition for decoding the Google Analytics (
 
 The [`app-measurement.proto`](./app-measurement.proto) file contains the Protocol buffers definition. A compiled descriptor file, [`app-measurement.desc`](./app-measurement.desc), is also included in the project.
 
+In case you are interested in the process of creating this proto definition, you can read the blog post [Unraveling Firebase Analytics GA4 calls to app-measurement.com](https://larihaataja.com/firebase-ga4-app-measurement-com-calls/).
+
 ## Compiling the descriptor
 
 If you want to make changes to the definition and compile the descriptor yourself, you can do so easily.
@@ -20,7 +22,7 @@ $ protoc --descriptor_set_out=app-measurement.desc app-measurement.proto
 
 ## Usage
 
-Once you have obtain a raw request body to `app-measurement.com/a` you can decompress it by first unzipping it and then decoding the Protocol buffers.
+Once you have obtain a raw request body to `app-measurement.com/a` you can decode it by first unzipping it and then decoding the Protocol buffers.
 
 ### Decode a request body using protocol buffer compiler
 
@@ -76,7 +78,7 @@ _pn  = ?
 _pc  = previous view controller
 _mst = ?
 _pv  = previous app version
-_pi  = 
+_pi  = ?
 _err = error
 _ev  = error parameter
 _el  = error code ?
