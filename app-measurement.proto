@@ -1,0 +1,75 @@
+syntax = "proto3";
+
+package app_measurement;
+
+message Bundle {
+    int32 protocol_version = 1;
+    message Event {
+        message EventParameter {
+            string name = 1;
+            string string_value = 2;
+            int64 int_value = 3;
+        }
+        repeated EventParameter param = 1;
+        string name = 2;
+        int64 timestamp_millis = 3;
+        int64 previous_timestamp_millis = 4;
+
+    }
+    repeated Event event = 2;
+
+    message UserProperty {
+        int64 set_timestamp_millis = 1;
+        string name = 2;
+        string string_value = 3;
+        int64 int_value = 4;
+    }
+    repeated UserProperty user_property = 3;
+
+    int64 upload_timestamp_millis = 4;
+    int64 start_timestamp_millis = 5;
+    int64 end_timestamp_millis = 6;
+    int64 previous_bundle_end_timestamp_millis = 7;
+
+    string platform = 8;
+    string operating_system_version = 9;
+    string device_model = 10;
+
+    string user_default_language = 11;
+
+    int32 time_zone_offset_minutes = 12;
+    string install_source = 13;
+    string app_id = 14;
+
+    string app_version = 16;
+
+    int32 gmp_version = 17;
+    int32 uploading_gmp_version = 18;
+
+    // 20 unknown, example values: "1"
+
+    string app_instance_id = 21;
+
+    int32 bundle_sequential_index = 23;
+
+    string gmp_app_id = 25;
+
+    int64 previous_bundle_start_timestamp_millis = 26;
+
+    string resettable_device_id = 27; // Android ID or IDFV
+
+    string firebase_instance_id = 30;
+
+    int32 app_version_major = 31;
+
+    int64 config_version = 35;
+
+    // 52 unknown, example values: "G1--"
+    // 53 unknown, example values: "2"
+    // 64 unknown, example values: "google_signals"
+    
+}
+
+message Batch {
+    repeated Bundle bundle = 1;
+}
