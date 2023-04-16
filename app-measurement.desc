@@ -1,0 +1,49 @@
+
+ù
+app-measurement.protoapp_measurement"Œ
+Bundle)
+protocol_version (RprotocolVersion3
+event (2.app_measurement.Bundle.EventReventI
+user_property (2$.app_measurement.Bundle.UserPropertyRuserProperty6
+upload_timestamp_millis (RuploadTimestampMillis4
+start_timestamp_millis (RstartTimestampMillis0
+end_timestamp_millis (RendTimestampMillisN
+$previous_bundle_end_timestamp_millis (R previousBundleEndTimestampMillis
+platform (	Rplatform8
+operating_system_version	 (	RoperatingSystemVersion!
+device_model
+ (	RdeviceModel2
+user_default_language (	RuserDefaultLanguage7
+time_zone_offset_minutes (RtimeZoneOffsetMinutes%
+install_source (	RinstallSource
+app_id (	RappId
+app_version (	R
+appVersion
+gmp_version (R
+gmpVersion2
+uploading_gmp_version (RuploadingGmpVersion&
+app_instance_id (	RappInstanceId6
+bundle_sequential_index (RbundleSequentialIndex
+
+gmp_app_id (	RgmpAppIdR
+&previous_bundle_start_timestamp_millis (R"previousBundleStartTimestampMillis0
+resettable_device_id (	RresettableDeviceId0
+firebase_instance_id (	RfirebaseInstanceId*
+app_version_major (RappVersionMajor%
+config_version# (RconfigVersion¬
+EventB
+param (2,.app_measurement.Bundle.Event.EventParameterRparam
+name (	Rname)
+timestamp_millis (RtimestampMillis:
+previous_timestamp_millis (RpreviousTimestampMillisd
+EventParameter
+name (	Rname!
+string_value (	RstringValue
+	int_value (RintValue”
+UserProperty0
+set_timestamp_millis (RsetTimestampMillis
+name (	Rname!
+string_value (	RstringValue
+	int_value (RintValue"8
+Batch/
+bundle (2.app_measurement.BundleRbundlebproto3
