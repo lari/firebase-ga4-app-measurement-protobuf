@@ -69,19 +69,19 @@ _au = app_update ?
 ### Event parameter names:
 
 ```
-_si  = ga_screen_id
+_si  = firebase_screen_id
 _et  = engagement_time_msec
-_sc  = ga_screen_class
+_sc  = firebase_screen_class
 _sn  = screen name
-_o   = ga_event_origin
-_pn  = ?
+_o   = firebase_event_origin
+_pn  = previous screen name ?
 _pc  = previous view controller
 _mst = ?
 _pv  = previous app version
 _pi  = ?
 _err = error
 _ev  = error parameter
-_el  = error code ?
+_el  = error code
 _r   = realtime
 _dbg = ga_debug
 ```
