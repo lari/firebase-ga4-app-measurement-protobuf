@@ -46,9 +46,15 @@ message Bundle {
     int32 gmp_version = 17;
     int32 uploading_gmp_version = 18;
 
-    // 20 unknown, example values: "1"
+    // x-ga-resettable_device_id
+    string resettable_device_id = 19;
+
+    // x-ga-npa (non-personalized ads) documented type: string (values often "1" for enabled). Kept as string per SGTM internal params.
+    string npa_non_personalized_ads = 20;
 
     string app_instance_id = 21;
+    // x-ga-dev_cert_hash
+    string dev_cert_hash = 22;
 
     int32 bundle_sequential_index = 23;
 
@@ -56,17 +62,28 @@ message Bundle {
 
     int64 previous_bundle_start_timestamp_millis = 26;
 
-    string resettable_device_id = 27; // Android ID or IDFV
+    string resettable_device_id_alt = 27; // Android ID or IDFV
 
     string firebase_instance_id = 30;
 
     int32 app_version_major = 31;
 
-    int64 config_version = 35;
+    // x-ga-target_os_version
+    // Previous config_version (kept in comment for historical reference)
+    string target_os_version = 35;
 
-    // 52 unknown, example values: "G1--"
+    // x-ga-system_properties.dynamite_version
+    string system_properties_dynamite_version = 46;
+
+    // x-ga-gcs (google consent state)
+    string gcs_google_consent_state = 52;
     // 53 unknown, example values: "2"
     // 64 unknown, example values: "google_signals"
+    // x-ga-consent_diagnostics
+    string consent_diagnostics = 71;
+
+    // x-ga-system_properties.delivery_index
+    int32 system_properties_delivery_index = 77;
     
 }
 
