@@ -1,6 +1,6 @@
 
-ù
-app-measurement.protoapp_measurement"Œ
+Æ
+app-measurement.protoapp_measurement"Ù
 Bundle)
 protocol_version (RprotocolVersion3
 event (2.app_measurement.Bundle.EventReventI
@@ -21,16 +21,23 @@ $previous_bundle_end_timestamp_millis (R previousBundleEndTimestampMillis
 appVersion
 gmp_version (R
 gmpVersion2
-uploading_gmp_version (RuploadingGmpVersion&
-app_instance_id (	RappInstanceId6
+uploading_gmp_version (RuploadingGmpVersion0
+resettable_device_id (	RresettableDeviceId
+npa (	Rnpa&
+app_instance_id (	RappInstanceId"
+dev_cert_hash (	RdevCertHash6
 bundle_sequential_index (RbundleSequentialIndex
 
 gmp_app_id (	RgmpAppIdR
-&previous_bundle_start_timestamp_millis (R"previousBundleStartTimestampMillis0
-resettable_device_id (	RresettableDeviceId0
+&previous_bundle_start_timestamp_millis (R"previousBundleStartTimestampMillis7
+resettable_device_id_alt (	RresettableDeviceIdAlt0
 firebase_instance_id (	RfirebaseInstanceId*
-app_version_major (RappVersionMajor%
-config_version# (RconfigVersion¬
+app_version_major (RappVersionMajor*
+target_os_version# (	RtargetOsVersionK
+"system_properties_dynamite_version. (	RsystemPropertiesDynamiteVersion
+gcs4 (	Rgcs/
+consent_diagnosticsG (	RconsentDiagnosticsG
+ system_properties_delivery_indexM (RsystemPropertiesDeliveryIndex¬
 EventB
 param (2,.app_measurement.Bundle.Event.EventParameterRparam
 name (	Rname)
